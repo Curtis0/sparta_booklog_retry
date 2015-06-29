@@ -1,5 +1,6 @@
 <p id="notice"><%= notice %></p>
 
+
 <p>
   <strong>Title:</strong>
   <%= @book.title %>
@@ -37,7 +38,7 @@
 <h2>All Review Users</h2>
 
 <% @book.users.each do |user| %>
-
+<%# The key to solving this issue was to put |user| between the vertical bars! %>
   <p>
     <%= user.email %>
   </p>
